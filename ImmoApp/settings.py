@@ -29,6 +29,8 @@ ALLOWED_HOSTS = ['*']
 
 SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
 
+WSGI_APPLICATION = 'ImmoApp.wsgi.application'
+
 TEMPLATE_DIRS = (
    os.path.join(SETTINGS_PATH, 'templates'),
 )
@@ -74,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ImmoApp.wsgi.application'
+
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
