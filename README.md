@@ -14,9 +14,3 @@ To launch test you need a new terminal:
     2- execute the command 'export DJANGO_SETTINGS_MODULE=ImmoApp.settings'
     3- execute the command 'pytest'
         
-
-
-Thank you for your time
-    
-    
-                                                                            Mohamed Faiez ABID
