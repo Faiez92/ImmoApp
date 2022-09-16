@@ -1,0 +1,2 @@
+[{"model":"ImmoApp.program","pk":1,"fields":{"name":"prog001","dispo":true}},
+{"model":"ImmoApp.program","pk":2,"fields":{"name":"prog002","dispo":true}}]

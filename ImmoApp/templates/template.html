@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button name="button" type="submit" onclick="location.href='{% url "list" %}'"> Actif listing</button>
+<button name="button" type="submit" onclick="location.href='{% url "prix" %}'"> Price listing</button>
+<button name="button" type="submit" onclick="location.href='{% url "piscine" %}'"> Piscine listing</button>
+<button name="button" type="submit" onclick="location.href='{% url "promo" %}'"> Promo listing</button>
+<button name="button" type="submit" onclick="location.href='{% url "saison" %}'"> Season listing</button>
+<button name="button" type="submit" onclick=location.href="home" > API</button>
+
+<h1>{{title}} </h1>
+<table border='1'>
+  <tr>
+    <th>Appartement ID</th>
+    <th>Surface</th>
+    <th>Prix</th>
+    <th>Nombre de piéces</th>
+    <th>Options</th>
+    <th>Program ID</th>
+  </tr>
+{% for appart in apparts %}
+    <tr>
+      <td>{{ appart.app_id }}</td>
+      <td>{{ appart.surface }}</td>
+      {% if appart.new_prix %}
+      <td>{{ appart.new_prix }}</td>
+      {% else %}
+      <td>{{ appart.prix }}</td>
+      {% endif %}
+      <td>{{ appart.nbre_piece }}</td>
+      <td>{{ appart.caract }}</td>
+      <td>{{ appart.prog_id }}</td>
+    </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

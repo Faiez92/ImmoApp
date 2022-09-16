@@ -1,0 +1,1 @@
+[{"model": "ImmoApp.appartement", "pk": 1, "fields": {"surface": 20.0, "prix": 80.0, "nbre_piece": 1, "caract": "piscine", "prog": 3}}]
